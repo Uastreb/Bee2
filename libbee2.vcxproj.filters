@@ -1,0 +1,383 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Header Files\core">
+      <UniqueIdentifier>{2a4285f7-8443-4dc9-85f5-6c936d217898}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\crypto">
+      <UniqueIdentifier>{7129039d-e1f5-450d-a3ee-edff864a1dc5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\math">
+      <UniqueIdentifier>{f9fcb8f7-431d-4ebe-831d-a4d6b493307b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Source Files\core">
+      <UniqueIdentifier>{07949982-9861-4861-9cde-4468b6e17720}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\math">
+      <UniqueIdentifier>{d956a1fe-7e82-41bf-a1e6-efe61f748b16}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\math\zz">
+      <UniqueIdentifier>{a185594d-bdcf-42c4-af2d-3b103d1f8b07}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\crypto">
+      <UniqueIdentifier>{1a5a0025-f11b-43c0-acf2-898c87c94ef4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\crypto\belt">
+      <UniqueIdentifier>{d92eef51-adc9-477e-bab2-8817eae19190}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\crypto\bash">
+      <UniqueIdentifier>{c1f48619-9ae8-4435-a96b-4c3c657bc9de}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\include\bee2\defs.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\bee2\info.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\bee2\core\b64.h">
+      <Filter>Header Files\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\bee2\core\blob.h">
+      <Filter>Header Files\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\bee2\core\dec.h">
+      <Filter>Header Files\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\bee2\core\der.h">
+      <Filter>Header Files\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\bee2\core\err.h">
+      <Filter>Header Files\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\bee2\core\hex.h">
+      <Filter>Header Files\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\bee2\core\mem.h">
+      <Filter>Header Files\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\bee2\core\mt.h">
+      <Filter>Header Files\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\bee2\core\obj.h">
+      <Filter>Header Files\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\bee2\core\oid.h">
+      <Filter>Header Files\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\bee2\core\prng.h">
+      <Filter>Header Files\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\bee2\core\rng.h">
+      <Filter>Header Files\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\bee2\core\safe.h">
+      <Filter>Header Files\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\bee2\core\stack.h">
+      <Filter>Header Files\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\bee2\core\str.h">
+      <Filter>Header Files\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\bee2\core\tm.h">
+      <Filter>Header Files\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\bee2\core\u16.h">
+      <Filter>Header Files\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\bee2\core\u32.h">
+      <Filter>Header Files\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\bee2\core\u64.h">
+      <Filter>Header Files\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\bee2\core\util.h">
+      <Filter>Header Files\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\bee2\core\word.h">
+      <Filter>Header Files\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\bee2\crypto\bake.h">
+      <Filter>Header Files\crypto</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\bee2\crypto\bash.h">
+      <Filter>Header Files\crypto</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\bee2\crypto\bels.h">
+      <Filter>Header Files\crypto</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\bee2\crypto\belt.h">
+      <Filter>Header Files\crypto</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\bee2\crypto\bign.h">
+      <Filter>Header Files\crypto</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\bee2\crypto\botp.h">
+      <Filter>Header Files\crypto</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\bee2\crypto\brng.h">
+      <Filter>Header Files\crypto</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\bee2\crypto\dstu.h">
+      <Filter>Header Files\crypto</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\bee2\crypto\g12s.h">
+      <Filter>Header Files\crypto</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\bee2\crypto\pfok.h">
+      <Filter>Header Files\crypto</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\bee2\math\ec.h">
+      <Filter>Header Files\math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\bee2\math\ec2.h">
+      <Filter>Header Files\math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\bee2\math\ecp.h">
+      <Filter>Header Files\math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\bee2\math\gf2.h">
+      <Filter>Header Files\math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\bee2\math\gfp.h">
+      <Filter>Header Files\math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\bee2\math\pp.h">
+      <Filter>Header Files\math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\bee2\math\pri.h">
+      <Filter>Header Files\math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\bee2\math\qr.h">
+      <Filter>Header Files\math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\bee2\math\ww.h">
+      <Filter>Header Files\math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\bee2\math\zm.h">
+      <Filter>Header Files\math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\bee2\math\zz.h">
+      <Filter>Header Files\math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\math\zz\zz_int.h">
+      <Filter>Source Files\math\zz</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\crypto\bign_lcl.h">
+      <Filter>Source Files\crypto</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\crypto\belt\belt_lcl.h">
+      <Filter>Source Files\crypto\belt</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\src\core\b64.c">
+      <Filter>Source Files\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\blob.c">
+      <Filter>Source Files\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\dec.c">
+      <Filter>Source Files\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\der.c">
+      <Filter>Source Files\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\err.c">
+      <Filter>Source Files\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\hex.c">
+      <Filter>Source Files\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\mem.c">
+      <Filter>Source Files\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\mt.c">
+      <Filter>Source Files\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\obj.c">
+      <Filter>Source Files\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\oid.c">
+      <Filter>Source Files\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\prng.c">
+      <Filter>Source Files\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\rng.c">
+      <Filter>Source Files\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\str.c">
+      <Filter>Source Files\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\tm.c">
+      <Filter>Source Files\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\u16.c">
+      <Filter>Source Files\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\u32.c">
+      <Filter>Source Files\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\u64.c">
+      <Filter>Source Files\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\util.c">
+      <Filter>Source Files\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\word.c">
+      <Filter>Source Files\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\math\ec.c">
+      <Filter>Source Files\math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\math\ec2.c">
+      <Filter>Source Files\math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\math\ecp.c">
+      <Filter>Source Files\math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\math\gf2.c">
+      <Filter>Source Files\math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\math\gfp.c">
+      <Filter>Source Files\math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\math\pp.c">
+      <Filter>Source Files\math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\math\pri.c">
+      <Filter>Source Files\math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\math\qr.c">
+      <Filter>Source Files\math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\math\ww.c">
+      <Filter>Source Files\math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\math\zm.c">
+      <Filter>Source Files\math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\math\zz\zz_add.c">
+      <Filter>Source Files\math\zz</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\math\zz\zz_etc.c">
+      <Filter>Source Files\math\zz</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\math\zz\zz_gcd.c">
+      <Filter>Source Files\math\zz</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\math\zz\zz_mod.c">
+      <Filter>Source Files\math\zz</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\math\zz\zz_mul.c">
+      <Filter>Source Files\math\zz</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\math\zz\zz_pow.c">
+      <Filter>Source Files\math\zz</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\math\zz\zz_red.c">
+      <Filter>Source Files\math\zz</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\crypto\bake.c">
+      <Filter>Source Files\crypto</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\crypto\bels.c">
+      <Filter>Source Files\crypto</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\crypto\bign.c">
+      <Filter>Source Files\crypto</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\crypto\botp.c">
+      <Filter>Source Files\crypto</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\crypto\brng.c">
+      <Filter>Source Files\crypto</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\crypto\dstu.c">
+      <Filter>Source Files\crypto</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\crypto\g12s.c">
+      <Filter>Source Files\crypto</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\crypto\pfok.c">
+      <Filter>Source Files\crypto</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\crypto\belt\belt_bde.c">
+      <Filter>Source Files\crypto\belt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\crypto\belt\belt_block.c">
+      <Filter>Source Files\crypto\belt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\crypto\belt\belt_cbc.c">
+      <Filter>Source Files\crypto\belt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\crypto\belt\belt_cfb.c">
+      <Filter>Source Files\crypto\belt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\crypto\belt\belt_che.c">
+      <Filter>Source Files\crypto\belt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\crypto\belt\belt_compr.c">
+      <Filter>Source Files\crypto\belt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\crypto\belt\belt_ctr.c">
+      <Filter>Source Files\crypto\belt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\crypto\belt\belt_dwp.c">
+      <Filter>Source Files\crypto\belt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\crypto\belt\belt_ecb.c">
+      <Filter>Source Files\crypto\belt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\crypto\belt\belt_fmt.c">
+      <Filter>Source Files\crypto\belt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\crypto\belt\belt_hash.c">
+      <Filter>Source Files\crypto\belt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\crypto\belt\belt_hmac.c">
+      <Filter>Source Files\crypto\belt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\crypto\belt\belt_krp.c">
+      <Filter>Source Files\crypto\belt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\crypto\belt\belt_kwp.c">
+      <Filter>Source Files\crypto\belt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\crypto\belt\belt_lcl.c">
+      <Filter>Source Files\crypto\belt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\crypto\belt\belt_mac.c">
+      <Filter>Source Files\crypto\belt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\crypto\belt\belt_pbkdf.c">
+      <Filter>Source Files\crypto\belt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\crypto\belt\belt_sde.c">
+      <Filter>Source Files\crypto\belt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\crypto\belt\belt_wbl.c">
+      <Filter>Source Files\crypto\belt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\crypto\bash\bash_prg.c">
+      <Filter>Source Files\crypto\bash</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\crypto\bash\bash_f.c">
+      <Filter>Source Files\crypto\bash</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\crypto\bash\bash_hash.c">
+      <Filter>Source Files\crypto\bash</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{1B3F88D7-BD23-4398-A331-3DB139CF07EF}</ProjectGuid>
+    <RootNamespace>bee2lib</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>16.0.30427.251</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(SolutionDir)distrib\$(Configuration)32\</OutDir>
+    <IntDir>$(SolutionDir)build\$(Configuration)32\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <OutDir>$(SolutionDir)distrib\$(Configuration)64\</OutDir>
+    <IntDir>$(SolutionDir)build\$(Configuration)64\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(SolutionDir)distrib\$(Configuration)32\</OutDir>
+    <IntDir>$(SolutionDir)build\$(Configuration)32\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <OutDir>$(SolutionDir)distrib\$(Configuration)64\</OutDir>
+    <IntDir>$(SolutionDir)build\$(Configuration)64\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>../../include;../../src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <PrecompiledHeader />
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Lib>
+      <AdditionalLibraryDirectories>libcmtd.lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <IgnoreAllDefaultLibraries>true</IgnoreAllDefaultLibraries>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <TargetEnvironment>X64</TargetEnvironment>
+    </Midl>
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>../../include;../../src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <PrecompiledHeader />
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>OldStyle</DebugInformationFormat>
+    </ClCompile>
+    <Lib>
+      <AdditionalOptions>/ignore:4006 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>libcmtd.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <AdditionalIncludeDirectories>../../include;../../src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader />
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>OldStyle</DebugInformationFormat>
+    </ClCompile>
+    <Lib>
+      <AdditionalOptions>/ignore:4006 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>libcmt.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <IgnoreAllDefaultLibraries>true</IgnoreAllDefaultLibraries>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <TargetEnvironment>X64</TargetEnvironment>
+    </Midl>
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <AdditionalIncludeDirectories>../../include;../../src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader />
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>OldStyle</DebugInformationFormat>
+    </ClCompile>
+    <Lib>
+      <AdditionalOptions>/ignore:4006 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>libcmt.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <IgnoreAllDefaultLibraries>true</IgnoreAllDefaultLibraries>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\include\bee2\core\b64.h" />
+    <ClInclude Include="..\..\include\bee2\core\blob.h" />
+    <ClInclude Include="..\..\include\bee2\core\dec.h" />
+    <ClInclude Include="..\..\include\bee2\core\der.h" />
+    <ClInclude Include="..\..\include\bee2\core\err.h" />
+    <ClInclude Include="..\..\include\bee2\core\hex.h" />
+    <ClInclude Include="..\..\include\bee2\core\mem.h" />
+    <ClInclude Include="..\..\include\bee2\core\mt.h" />
+    <ClInclude Include="..\..\include\bee2\core\obj.h" />
+    <ClInclude Include="..\..\include\bee2\core\oid.h" />
+    <ClInclude Include="..\..\include\bee2\core\prng.h" />
+    <ClInclude Include="..\..\include\bee2\core\rng.h" />
+    <ClInclude Include="..\..\include\bee2\core\safe.h" />
+    <ClInclude Include="..\..\include\bee2\core\stack.h" />
+    <ClInclude Include="..\..\include\bee2\core\str.h" />
+    <ClInclude Include="..\..\include\bee2\core\tm.h" />
+    <ClInclude Include="..\..\include\bee2\core\u16.h" />
+    <ClInclude Include="..\..\include\bee2\core\u32.h" />
+    <ClInclude Include="..\..\include\bee2\core\u64.h" />
+    <ClInclude Include="..\..\include\bee2\core\util.h" />
+    <ClInclude Include="..\..\include\bee2\core\word.h" />
+    <ClInclude Include="..\..\include\bee2\crypto\bake.h" />
+    <ClInclude Include="..\..\include\bee2\crypto\bash.h" />
+    <ClInclude Include="..\..\include\bee2\crypto\bels.h" />
+    <ClInclude Include="..\..\include\bee2\crypto\belt.h" />
+    <ClInclude Include="..\..\include\bee2\crypto\bign.h" />
+    <ClInclude Include="..\..\include\bee2\crypto\botp.h" />
+    <ClInclude Include="..\..\include\bee2\crypto\brng.h" />
+    <ClInclude Include="..\..\include\bee2\crypto\dstu.h" />
+    <ClInclude Include="..\..\include\bee2\crypto\g12s.h" />
+    <ClInclude Include="..\..\include\bee2\crypto\pfok.h" />
+    <ClInclude Include="..\..\include\bee2\defs.h" />
+    <ClInclude Include="..\..\include\bee2\info.h" />
+    <ClInclude Include="..\..\include\bee2\math\ec.h" />
+    <ClInclude Include="..\..\include\bee2\math\ec2.h" />
+    <ClInclude Include="..\..\include\bee2\math\ecp.h" />
+    <ClInclude Include="..\..\include\bee2\math\gf2.h" />
+    <ClInclude Include="..\..\include\bee2\math\gfp.h" />
+    <ClInclude Include="..\..\include\bee2\math\pp.h" />
+    <ClInclude Include="..\..\include\bee2\math\pri.h" />
+    <ClInclude Include="..\..\include\bee2\math\qr.h" />
+    <ClInclude Include="..\..\include\bee2\math\ww.h" />
+    <ClInclude Include="..\..\include\bee2\math\zm.h" />
+    <ClInclude Include="..\..\include\bee2\math\zz.h" />
+    <ClInclude Include="..\..\src\crypto\belt\belt_lcl.h" />
+    <ClInclude Include="..\..\src\crypto\bign_lcl.h" />
+    <ClInclude Include="..\..\src\math\zz\zz_int.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\src\core\b64.c" />
+    <ClCompile Include="..\..\src\core\blob.c" />
+    <ClCompile Include="..\..\src\core\dec.c" />
+    <ClCompile Include="..\..\src\core\der.c" />
+    <ClCompile Include="..\..\src\core\err.c" />
+    <ClCompile Include="..\..\src\core\hex.c" />
+    <ClCompile Include="..\..\src\core\mem.c" />
+    <ClCompile Include="..\..\src\core\mt.c" />
+    <ClCompile Include="..\..\src\core\obj.c" />
+    <ClCompile Include="..\..\src\core\oid.c" />
+    <ClCompile Include="..\..\src\core\prng.c" />
+    <ClCompile Include="..\..\src\core\rng.c" />
+    <ClCompile Include="..\..\src\core\str.c" />
+    <ClCompile Include="..\..\src\core\tm.c" />
+    <ClCompile Include="..\..\src\core\u16.c" />
+    <ClCompile Include="..\..\src\core\u32.c" />
+    <ClCompile Include="..\..\src\core\u64.c" />
+    <ClCompile Include="..\..\src\core\util.c" />
+    <ClCompile Include="..\..\src\core\word.c" />
+    <ClCompile Include="..\..\src\crypto\bake.c" />
+    <ClCompile Include="..\..\src\crypto\bash\bash_f.c" />
+    <ClCompile Include="..\..\src\crypto\bash\bash_hash.c" />
+    <ClCompile Include="..\..\src\crypto\bash\bash_prg.c" />
+    <ClCompile Include="..\..\src\crypto\bels.c" />
+    <ClCompile Include="..\..\src\crypto\belt\belt_bde.c" />
+    <ClCompile Include="..\..\src\crypto\belt\belt_block.c" />
+    <ClCompile Include="..\..\src\crypto\belt\belt_cbc.c" />
+    <ClCompile Include="..\..\src\crypto\belt\belt_cfb.c" />
+    <ClCompile Include="..\..\src\crypto\belt\belt_che.c" />
+    <ClCompile Include="..\..\src\crypto\belt\belt_compr.c" />
+    <ClCompile Include="..\..\src\crypto\belt\belt_ctr.c" />
+    <ClCompile Include="..\..\src\crypto\belt\belt_dwp.c" />
+    <ClCompile Include="..\..\src\crypto\belt\belt_ecb.c" />
+    <ClCompile Include="..\..\src\crypto\belt\belt_fmt.c" />
+    <ClCompile Include="..\..\src\crypto\belt\belt_hash.c" />
+    <ClCompile Include="..\..\src\crypto\belt\belt_hmac.c" />
+    <ClCompile Include="..\..\src\crypto\belt\belt_krp.c" />
+    <ClCompile Include="..\..\src\crypto\belt\belt_kwp.c" />
+    <ClCompile Include="..\..\src\crypto\belt\belt_lcl.c" />
+    <ClCompile Include="..\..\src\crypto\belt\belt_mac.c" />
+    <ClCompile Include="..\..\src\crypto\belt\belt_pbkdf.c" />
+    <ClCompile Include="..\..\src\crypto\belt\belt_sde.c" />
+    <ClCompile Include="..\..\src\crypto\belt\belt_wbl.c" />
+    <ClCompile Include="..\..\src\crypto\bign.c" />
+    <ClCompile Include="..\..\src\crypto\botp.c" />
+    <ClCompile Include="..\..\src\crypto\brng.c" />
+    <ClCompile Include="..\..\src\crypto\dstu.c" />
+    <ClCompile Include="..\..\src\crypto\g12s.c" />
+    <ClCompile Include="..\..\src\crypto\pfok.c" />
+    <ClCompile Include="..\..\src\math\ec.c" />
+    <ClCompile Include="..\..\src\math\ec2.c" />
+    <ClCompile Include="..\..\src\math\ecp.c" />
+    <ClCompile Include="..\..\src\math\gf2.c" />
+    <ClCompile Include="..\..\src\math\gfp.c" />
+    <ClCompile Include="..\..\src\math\pp.c" />
+    <ClCompile Include="..\..\src\math\pri.c" />
+    <ClCompile Include="..\..\src\math\qr.c" />
+    <ClCompile Include="..\..\src\math\ww.c" />
+    <ClCompile Include="..\..\src\math\zm.c" />
+    <ClCompile Include="..\..\src\math\zz\zz_add.c" />
+    <ClCompile Include="..\..\src\math\zz\zz_etc.c" />
+    <ClCompile Include="..\..\src\math\zz\zz_gcd.c" />
+    <ClCompile Include="..\..\src\math\zz\zz_mod.c" />
+    <ClCompile Include="..\..\src\math\zz\zz_mul.c" />
+    <ClCompile Include="..\..\src\math\zz\zz_pow.c" />
+    <ClCompile Include="..\..\src\math\zz\zz_red.c" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

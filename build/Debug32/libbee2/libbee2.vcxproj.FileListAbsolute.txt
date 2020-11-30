@@ -1,0 +1,2 @@
+C:\Users\Вадим\Desktop\bee2-master\win\vs09\distrib\Debug32\libbee2.pdb
+C:\Users\Вадим\Desktop\bee2-master\win\vs09\build\Debug32\libbee2\libbee2.pdb
